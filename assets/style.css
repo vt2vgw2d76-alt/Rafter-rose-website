@@ -19,3 +19,32 @@
   color: #fffaf0;
 }
   
+
+/* Header logo */
+.header-logo {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  width: 155px;
+  max-width: 45%;
+  padding: 0;
+}
+
+.header-logo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+
+  /* Warm cream */
+  filter: brightness(0) saturate(100%)
+    invert(93%) sepia(12%)
+    saturate(270%) hue-rotate(337deg)
+    brightness(104%) contrast(94%);
+}
+
+@media (max-width: 600px) {
+  .header-logo {
+    width: 115px;
+  }
+}
